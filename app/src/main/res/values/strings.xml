@@ -21,4 +21,5 @@
         <item>Minneapolis</item>
     </string-array>
     <string name="first_city">First City</string>
+    <string name="second_city">Second City</string>
 </resources>
