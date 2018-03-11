@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Grass is Greener</string>
+    <string name="app_name">GrassIsGreener</string>
+    <string-array name="option1">
+        <item>Land Size</item>
+        <item>Majority Party</item>
+        <item>Population</item>
+        <item>Median Household Income</item>
+        <item>New Home Sales</item>
+        <item>Total Number of People in Poverty</item>
+    </string-array>
+    <string-array name="firstCity">
+        <item>Omaha</item>
+        <item>Chicago</item>
+        <item>Kansas City</item>
+        <item>Minneapolis</item>
+    </string-array>
+    <string-array name="secondCity">
+        <item>Omaha</item>
+        <item>Chicago</item>
+        <item>Kansas City</item>
+        <item>Minneapolis</item>
+    </string-array>
 </resources>

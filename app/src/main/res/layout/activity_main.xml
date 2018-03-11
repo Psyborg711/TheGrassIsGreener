@@ -2,34 +2,107 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context="com.example.android.grassisgreener.MainActivity"
-    android:orientation="vertical">
-
-    <TextView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/firstCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First City"
+            android:background="#00acc1"
+            android:padding="4dp" />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First City"
+            android:background="#80deea"
+            android:entries="@array/firstCity"
+            android:id="@+id/firstCitySpinner"/>
+        <TextView
+            android:id="@+id/unit_aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unit_A"
+            android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/unit_ba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unit_B"
+            android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/unit_ca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unit_C"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Spinner
+            android:id="@+id/option_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="option 1"
+            android:entries="@array/option1"
+            android:layout_marginTop="50dp"
+            >
+        </Spinner>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 2"
+            android:layout_marginTop="8dp">
+        </Spinner>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="option 3"
+            android:layout_marginTop="16dp">
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="First City"
-        android:layout_gravity="center"
-        android:padding="4dp"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="unit_A"
-        android:layout_margin="8dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="unit_B"
-        android:layout_margin="8dp"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="unit_C"
-        android:layout_margin="8dp"/>
-
-
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second City"
+            android:background="#00acc1"
+            android:padding="4dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second City"
+            android:entries="@array/secondCity"
+            android:background="#80deea"
+            android:id="@+id/secondCitySpinner"/>
+        <TextView
+            android:id="@+id/unit_ab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unit_A"
+            android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/unit_bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unit_B"
+            android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/unit_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="unit_C"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
 </LinearLayout>
