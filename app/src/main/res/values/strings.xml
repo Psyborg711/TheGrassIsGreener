@@ -5,20 +5,22 @@
         <item>Majority Party</item>
         <item>Population</item>
         <item>Median Household Income</item>
-        <item>New Home Sales</item>
+        <item>Median Gross Rent</item>
         <item>Total Number of People in Poverty</item>
     </string-array>
-    <string-array name="firstCity">
+    <string-array name="citylist">
         <item>Omaha</item>
         <item>Chicago</item>
         <item>Kansas City</item>
         <item>Minneapolis</item>
     </string-array>
-    <string-array name="secondCity">
-        <item>Omaha</item>
-        <item>Chicago</item>
-        <item>Kansas City</item>
-        <item>Minneapolis</item>
+    <string-array name="kansas_city_parameters">
+        <item>124.81 sq m</item>
+        <item>Democratic</item>
+        <item>151,709</item>
+        <item>$39,536</item>
+        <item>$802</item>
+        <item>23.7%</item>
     </string-array>
     <string name="first_city">First City</string>
     <string name="second_city">Second City</string>
