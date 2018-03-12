@@ -14,7 +14,7 @@
             android:id="@+id/firstCity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="First City"
+            android:text="@string/first_city"
             android:background="#00acc1"
             android:padding="4dp" />
         <Spinner
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:text="First City"
             android:background="#80deea"
-            android:entries="@array/firstCity"
+            android:entries="@array/citylist"
             android:id="@+id/firstCitySpinner"/>
         <TextView
             android:id="@+id/unit_aa"
@@ -44,28 +44,30 @@
             android:layout_margin="8dp"/>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="match_parent"
         android:orientation="vertical">
         <Spinner
             android:id="@+id/option_one"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="option 1"
             android:entries="@array/option1"
+            android:spinnerMode="dialog"
             android:layout_marginTop="50dp"
             >
         </Spinner>
         <Spinner
+            android:id="@+id/option_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="option 2"
+            android:entries="@array/option2"
             android:layout_marginTop="8dp">
         </Spinner>
         <Spinner
+            android:id="@+id/option_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="option 3"
+            android:entries="@array/option2"
             android:layout_marginTop="16dp">
         </Spinner>
     </LinearLayout>
@@ -82,8 +84,8 @@
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Second City"
-            android:entries="@array/secondCity"
+            android:text="@string/second_city"
+            android:entries="@array/citylist"
             android:background="#80deea"
             android:id="@+id/secondCitySpinner"/>
         <TextView
@@ -105,4 +107,9 @@
             android:text="unit_C"
             android:layout_margin="8dp"/>
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="submitClicked"/>
 </LinearLayout>

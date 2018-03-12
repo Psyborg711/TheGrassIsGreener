@@ -6,7 +6,16 @@
         <item>Population</item>
         <item>Median Household Income</item>
         <item>Median Gross Rent</item>
-        <item>Total Number of People in Poverty</item>
+        <item>Percentage of Population in Poverty</item>
+    </string-array>
+    <string-array name="option2">
+        <item>None</item>
+        <item>Land Size</item>
+        <item>Majority Party</item>
+        <item>Population</item>
+        <item>Median Household Income</item>
+        <item>Median Gross Rent</item>
+        <item>Percentage of Population in Poverty</item>
     </string-array>
     <string-array name="citylist">
         <item>Omaha</item>
