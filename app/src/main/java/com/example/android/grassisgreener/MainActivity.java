@@ -47,9 +47,24 @@ public class MainActivity extends AppCompatActivity {
         // Continue if parameter2 does not match parameter1
         if (!param2.equals(param1)) {
             totParams.add(param2);
-            // Continue if paramter3 does not match parameter 1 or parameter2
-            if (!param3.equals(param1) | !param3.equals(param2)) {
+            // Continue if parameter3 does not match parameter 1 or parameter2
+            if (!param3.equals(param1)) {
                 totParams.add(param3);
+                if (!param3.equals(param2))
+                {
+                    // Calling the method to output parameter values
+                    findOutputs(city1, totParams);
+                }
+                else if (param3.equals("None"))
+                {
+                    // Calling the method to output parameter values
+                    findOutputs(city1, totParams);
+                }
+                // Parameter has matched, making user change their choices and re-trying
+                else {
+                    Toast.makeText(getApplicationContext(), "A duplicate parameter was detected, please change and submit again.",
+                            Toast.LENGTH_SHORT).show();
+                }
             }
             // Parameter has matched, making user change their choices and re-trying
             else {
@@ -63,8 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         }
 
-        // Calling the method to output parameter values
-        findOutputs(city1, totParams);
+
 
 
     }
