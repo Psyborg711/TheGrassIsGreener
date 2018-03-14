@@ -18,8 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void submitClicked (View view)
-    {
+    public void submitClicked(View view) {
         // Declare boolean to let the array know when the last parameter has been added
         boolean endOfList = false;
 
@@ -59,42 +58,130 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         // Parameter has matched, making user change their choices and re-trying
-        else
-        {
+        else {
             Toast.makeText(getApplicationContext(), "A duplicate parameter was detected, please change and submit again.",
                     Toast.LENGTH_SHORT).show();
         }
 
         // Calling the method to output parameter values
-        outputCity1(city1,totParams);
+        findOutputs(city1, totParams);
 
 
     }
 
-    private void outputCity1 (String cityName, ArrayList chosenParams)
-    {
-        if(cityName.equals("Kansas City"))
-        {
-            String[] myStrings = getResources().getStringArray(R.array.kansas_city_parameters);
+    private void findOutputs(String cityName, ArrayList chosenParams) {
+        int paramIndex;
+        String[] paramData;
 
+        if (cityName.equals("Kansas City")) {
+            paramData = getResources().getStringArray(R.array.kansas_city_parameters);
+
+            textOutput1(paramData, chosenParams.get(0).toString(), 1);
+            textOutput1(paramData, chosenParams.get(1).toString(), 2);
+            textOutput1(paramData, chosenParams.get(2).toString(), 3);
+        }
+
+        if (cityName.equals("Omaha")) {
+            String[] myStrings = getResources().getStringArray(R.array.kansas_city_parameters);
+        }
+
+        if (cityName.equals("Chicago")) {
+            String[] myStrings = getResources().getStringArray(R.array.kansas_city_parameters);
+        }
+
+        if (cityName.equals("Minneapolis")) {
+            String[] myStrings = getResources().getStringArray(R.array.kansas_city_parameters);
+        }
+
+    }
+
+    private void textOutput1(String[] cityParamData, String parameterChoice, int outputWindowNum) {
+        if (outputWindowNum == 1) {
+            // Setup Output1
             TextView tv1 = findViewById(R.id.unit_aa);
-            tv1.setText("Hi");
+
+            switch (parameterChoice) {
+                case "Land Size":
+                    tv1.setText(cityParamData[0]);
+                    break;
+                case "Majority Party":
+                    tv1.setText(cityParamData[1]);
+                    break;
+                case "Population":
+                    tv1.setText(cityParamData[2]);
+                    break;
+                case "Median Household Income":
+                    tv1.setText(cityParamData[3]);
+                    break;
+                case "Median Gross Rent":
+                    tv1.setText(cityParamData[4]);
+                    break;
+                case "Percentage of Population in Poverty":
+                    tv1.setText(cityParamData[5]);
+                    break;
+                default:
+                    tv1.setText("NULL");
+                    break;
+            }
         }
 
-        if(cityName.equals("Omaha"))
-        {
-            String[] myStrings = getResources().getStringArray(R.array.kansas_city_parameters);
-        }
+        if (outputWindowNum == 2) {
+            // Setup Output2
+            TextView tv2 = findViewById(R.id.unit_ba);
 
-        if(cityName.equals("Chicago"))
-        {
-            String[] myStrings = getResources().getStringArray(R.array.kansas_city_parameters);
+            switch (parameterChoice) {
+                case "Land Size":
+                    tv2.setText(cityParamData[0]);
+                    break;
+                case "Majority Party":
+                    tv2.setText(cityParamData[1]);
+                    break;
+                case "Population":
+                    tv2.setText(cityParamData[2]);
+                    break;
+                case "Median Household Income":
+                    tv2.setText(cityParamData[3]);
+                    break;
+                case "Median Gross Rent":
+                    tv2.setText(cityParamData[4]);
+                    break;
+                case "Percentage of Population in Poverty":
+                    tv2.setText(cityParamData[5]);
+                    break;
+                default:
+                    tv2.setText("NULL");
+                    break;
+            }
         }
+        if (outputWindowNum == 3) {
+            // Setup Output3
+            TextView tv3 = findViewById(R.id.unit_ca);
 
-        if(cityName.equals("Minneapolis"))
-        {
-            String[] myStrings = getResources().getStringArray(R.array.kansas_city_parameters);
+            switch (parameterChoice) {
+                case "Land Size":
+                    tv3.setText(cityParamData[0]);
+                    break;
+                case "Majority Party":
+                    tv3.setText(cityParamData[1]);
+                    break;
+                case "Population":
+                    tv3.setText(cityParamData[2]);
+                    break;
+                case "Median Household Income":
+                    tv3.setText(cityParamData[3]);
+                    break;
+                case "Median Gross Rent":
+                    tv3.setText(cityParamData[4]);
+                    break;
+                case "Percentage of Population in Poverty":
+                    tv3.setText(cityParamData[5]);
+                    break;
+                default:
+                    tv3.setText("NULL");
+                    break;
+            }
         }
-
     }
 }
+
+
