@@ -31,6 +31,30 @@
         <item>$802</item>
         <item>23.7%</item>
     </string-array>
+    <string-array name="omaha_parameters">
+        <item>1 sq m</item>
+        <item>Socialist</item>
+        <item>0</item>
+        <item>$0</item>
+        <item>$0</item>
+        <item>0%</item>
+    </string-array>
+    <string-array name="chicago_parameters">
+        <item>1 sq m</item>
+        <item>Socialist</item>
+        <item>0</item>
+        <item>$0</item>
+        <item>$0</item>
+        <item>0%</item>
+    </string-array>
+    <string-array name="minneapolis_parameters">
+        <item>1 sq m</item>
+        <item>Socialist</item>
+        <item>0</item>
+        <item>$0</item>
+        <item>$0</item>
+        <item>0%</item>
+    </string-array>
     <string name="first_city">First City</string>
     <string name="second_city">Second City</string>
 </resources>
