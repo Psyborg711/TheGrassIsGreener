@@ -32,28 +32,28 @@
         <item>23.7%</item>
     </string-array>
     <string-array name="omaha_parameters">
-        <item>1 sq m</item>
-        <item>Socialist</item>
-        <item>0</item>
-        <item>$0</item>
-        <item>$0</item>
-        <item>0%</item>
+        <item>127.09 sq m</item>
+        <item>Republican</item>
+        <item>446,970</item>
+        <item>$50,827</item>
+        <item>$819</item>
+        <item>12.7%</item>
     </string-array>
     <string-array name="chicago_parameters">
-        <item>1 sq m</item>
-        <item>Socialist</item>
-        <item>0</item>
-        <item>$0</item>
-        <item>$0</item>
-        <item>0%</item>
+        <item>11,841.8 sq m</item>
+        <item>Demoratic</item>
+        <item>2,704,958</item>
+        <item>$50,434</item>
+        <item>$987</item>
+        <item>21.7%</item>
     </string-array>
     <string-array name="minneapolis_parameters">
-        <item>1 sq m</item>
-        <item>Socialist</item>
-        <item>0</item>
-        <item>$0</item>
-        <item>$0</item>
-        <item>0%</item>
+        <item>53.97 sq m</item>
+        <item>Democratic</item>
+        <item>413,651</item>
+        <item>52,611</item>
+        <item>$898</item>
+        <item>23%</item>
     </string-array>
     <string name="first_city">First City</string>
     <string name="second_city">Second City</string>
