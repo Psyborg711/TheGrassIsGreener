@@ -1,115 +1,195 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.grassisgreener.MainActivity"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="horizontal">
+    android:layout_height="match_parent"
+    tools:context="com.example.android.grassisgreener.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/firstCity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/first_city"
-            android:background="#00acc1"
-            android:padding="4dp" />
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="First City"
-            android:background="#80deea"
-            android:entries="@array/citylist"
-            android:id="@+id/firstCitySpinner"/>
-        <TextView
-            android:id="@+id/unit_aa"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="unit_A"
-            android:layout_margin="8dp"/>
-        <TextView
-            android:id="@+id/unit_ba"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="unit_B"
-            android:layout_margin="8dp"/>
-        <TextView
-            android:id="@+id/unit_ca"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="unit_C"
-            android:layout_margin="8dp"/>
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/grass1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/firstCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1fff2a"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/first_city"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/firstCitySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#80deea"
+                android:entries="@array/citylist"
+                android:text="First City" />
+
+            <TextView
+                android:id="@+id/unit_aa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#1fff2a"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit_ba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#1fff2a"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit_ca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#1fff2a"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/mirrorskyline"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/option_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:alpha=".6"
+                android:background="#ffffff"
+                android:entries="@array/option1"
+                android:scrollbarSize="36dp"
+                android:spinnerMode="dialog"></Spinner>
+
+            <Spinner
+                android:id="@+id/option_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:alpha=".6"
+                android:background="#ffffff"
+                android:entries="@array/option2"></Spinner>
+
+            <Spinner
+                android:id="@+id/option_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:alpha=".6"
+                android:background="#ffffff"
+                android:entries="@array/option2"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/grass2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1fff2a"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Second City"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/secondCitySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#80deea"
+                android:entries="@array/citylist"
+                android:text="@string/second_city" />
+
+            <TextView
+                android:id="@+id/unit_ab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#1fff2a"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit_bb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#1fff2a"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit_cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#1fff2a"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="140dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <Spinner
-            android:id="@+id/option_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/option1"
-            android:spinnerMode="dialog"
-            android:layout_marginTop="50dp"
-            >
-        </Spinner>
-        <Spinner
-            android:id="@+id/option_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/option2"
-            android:layout_marginTop="8dp">
-        </Spinner>
-        <Spinner
-            android:id="@+id/option_three"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:entries="@array/option2"
-            android:layout_marginTop="16dp">
-        </Spinner>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Second City"
-            android:background="#00acc1"
-            android:padding="4dp"/>
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/second_city"
-            android:entries="@array/citylist"
-            android:background="#80deea"
-            android:id="@+id/secondCitySpinner"/>
-        <TextView
-            android:id="@+id/unit_ab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="unit_A"
-            android:layout_margin="8dp"/>
-        <TextView
-            android:id="@+id/unit_bb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="unit_B"
-            android:layout_margin="8dp"/>
-        <TextView
-            android:id="@+id/unit_cb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="unit_C"
-            android:layout_margin="8dp"/>
-    </LinearLayout>
+
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="248dp"
+        android:onClick="submitClicked"
         android:text="Submit"
-        android:onClick="submitClicked"/>
-</LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>
